@@ -13,6 +13,9 @@ package midtermexam_versiona_extensioncode;
  * code.
  * @author dancye, 2019
  */
+
+//Adding some code in GitHub.com to the UserProfile.java for a fetch+merge
+
 import java.util.Scanner;
 public class UserProfile 
 {
