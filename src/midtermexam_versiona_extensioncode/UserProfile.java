@@ -13,6 +13,7 @@ package midtermexam_versiona_extensioncode;
  * code.
  * @author dancye, 2019
  */
+import java.util.Scanner;
 public class UserProfile 
 {
     
@@ -62,7 +63,22 @@ public class UserProfile
     }
     
     
-    
-    
-    
-}//end class
+}
+
+
+class TestUserprofile {
+    public static void main (String[] args) {
+        UserProfile user1 = new UserProfile("1234", "Comedy");
+        
+        Scanner input = new Scanner(System.in);
+        System.out.print("Please enter your name: ");
+        String name = input.nextLine();
+        
+        System.out.print("Please enter favourite genre from Comedy, Drama, Action, or Mystery: ");
+        user1.setGenre(input.nextLine());
+        
+        System.out.print("Hello " + name + " your user profile has been created!");
+       
+    }
+        
+}
